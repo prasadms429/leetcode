@@ -1,7 +1,7 @@
 class Solution {
 public:
     int romanToInt(string s) {
-        unordered_map<char,int> U={ {'I',1},
+        unordered_map<char,int> U={ {'I',1},    //Unordered map is a key value pair, implemented using hashmap.
                                    {'V',5},
                                    {'X',10},
                                    {'L',50},
