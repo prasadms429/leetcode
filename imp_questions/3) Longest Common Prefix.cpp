@@ -6,12 +6,12 @@ public:
         int size=strs.size();
         int minimum=min_length(strs,size);
         
-        for(int i=0;i<minimum;i++)
+        for(int i=0;i<minimum;i++)  // It travers through characters of first string element, till minimum string size.
         {
-            current=strs[0][i];
-            for(int j=1;j<strs.size();j++)
+            current=strs[0][i]; // First string element in vector.
+            for(int j=1;j<strs.size();j++)  // It travers through second string element to last string element in the vector.
             {
-               if(strs[j][i]!=current){
+               if(strs[j][i]!=current){     // It compares charcters in the string of first element with all other characters of string elements in the vector.
                    return res;
                }
             }
